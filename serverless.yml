@@ -1,0 +1,17 @@
+service: serverless-rekognition
+
+provider: 
+  name: aws
+  runtime: nodejs8.10
+  stage: test
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+functions:
+  rekognition:
+    handler: src/api.default
+    events:
+      - http: ANY /
+      - http: 'ANY {proxi+}'
