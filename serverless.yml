@@ -18,3 +18,8 @@ functions:
     events:
       - http: ANY /
       - http: 'ANY {proxi+}'
+
+custom:
+  webpackIncludeModules:
+    forceInclude:
+      - request
