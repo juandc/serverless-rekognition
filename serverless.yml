@@ -4,6 +4,9 @@ provider:
   name: aws
   runtime: nodejs8.10
   stage: test
+  environment:
+    ACCESS_KEY_ID: ${file(./serverless.env.yml).ACCES_KEY_ID}
+    SECRET_ACCESS_KEY: ${file(./serverless.env.yml).SECRET_ACCESS_KEY}
 
 plugins:
   - serverless-webpack
