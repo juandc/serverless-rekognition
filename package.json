@@ -12,7 +12,7 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "aws-sdk": "^2.293.0",
+    "aws-sdk": "^2.814.0",
     "express": "^4.16.3",
     "request": "^2.88.0",
     "serverless-http": "^1.6.0"
